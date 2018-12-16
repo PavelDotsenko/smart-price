@@ -1,0 +1,15 @@
+{
+  "name": "smart-price",
+  "version": "1.0.0",
+  "description": "Application for creating and editing price tags for stores",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/PavelDotsenko/smart-price.git",
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^3.0.7"
+  }
+}

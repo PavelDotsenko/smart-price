@@ -1,0 +1,6 @@
+node_modules
+package-lock.json
+electron/node_modules
+electron/package-lock.json
+electron/css
+electron/js
