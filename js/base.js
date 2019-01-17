@@ -1,7 +1,5 @@
-// Подключение файлов конфигураций
-const intarface = require('./structure/app.json'),
-      locale    = require('./locale/ru.json')
-
 // Инициализация основных блоков
-const mainMenu = new MainMenu('.main-menu', intarface.pages),
-      mainConteint = document.querySelector('.main-conteint');
+window.locale = new Translate(Lockr.get('current_language'), () => {
+    window.main_menu    = new MainMenu('.main-menu', structure.menu);
+    window.main_content = document.querySelector('.main-content');
+})

@@ -13,13 +13,24 @@ const gulp 	   = require('gulp'),
 // ================================================
 //			Переменные
 // ================================================
-let src = {js: ['js/classes.js',
-				'js/function.js',
-				'js/base.js'],
-		   all_js: 'js/**/*.js',
-		   sass: 'sass/**/*.sass'},
-	dest = {js: 'electron/js',
-			css: 'electron/css'}
+let src = {
+		js: [
+			'js/classes/Translate.js',
+			'js/classes/MainMenu.js',
+			'js/classes/MainContent.js',
+			'js/classes/PageSettings.js',
+			'js/lockr.js',
+			'js/function.js',
+			'js/intarface.js',
+			'js/base.js'
+		],
+		all_js: 'js/**/*.js',
+		sass: 'sass/**/*.sass'
+	},
+	dest = {
+		js: 'electron/js',
+		css: 'electron/css'
+		}
 
 // ================================================
 //			Функции
