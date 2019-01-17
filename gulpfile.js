@@ -57,4 +57,4 @@ function watchFiles() {
 
 gulp.task('styles', styles)
 gulp.task('scripts', scripts)
-gulp.task('default', gulp.parallel(watchFiles))
+gulp.task('default', gulp.series('styles', 'scripts', gulp.parallel(watchFiles)))
