@@ -6,12 +6,42 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <article class="preloader">
-      <div class="loader"></div>
+    <article class="preloader"><span></span></article>
+    <article class="welcome">
+      <div class="welcome-block">
+        <h1 data_lang="first-welcome">Welcome to Smart Price</h1>
+        <h2 data_lang="app-description">Application for quickly creating and editing price tags</h2>
+        <div class="choice-lang">
+          <p data_lang="choice-preferred-lang">Choose your preferred language</p>
+          <select class="choise-lang" name="choise-lang"></select>
+          <br>
+          <button class="save-lang" data_lang="Select">Select</button>
+        </div>
+      </div>
     </article>
     <section class="main-conteiner">
-      <nav class="main-menu"></nav>
-      <div class="main-conteint"></div>
+      <nav class="main-menu">
+        <button class="page-print" data_lang="Print"></button>
+        <button class="page-products" data_lang="Products"></button>
+        <button class="page-brands" data_lang="Brands"></button>
+        <button class="page-prices" data_lang="Prices"></button>
+        <button class="page-settings" data_lang="Settings"></button>
+      </nav>
+      <div class="main-content">
+        <article class="content-preloader"><span></span></article>
+        <section id="page-print"></section>
+        <section id="page-products"></section>
+        <section id="page-brands"></section>
+        <section id="page-prices"></section>
+        <section id="page-settings">
+          <h1 data_lang="Settings_desc"></h1>
+          <div>
+            <h2 data_lang="Lang_settings"></h2>
+            <label for="" data_lang="choice-preferred-lang"></label>
+            <select class="choice-preferred-lang"></select>
+          </div>
+        </section>
+      </div>
     </section>
     <script src="js/scripts.js"></script>
   </body>

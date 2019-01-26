@@ -22,6 +22,8 @@ class Translate {
                         this.data = (err == null) ? this.data = require(file) : false
                         this.currentLang = this.data ? this.data.locale : 'English'
 
+                        this.translateAll()
+
                         if (this.callback && typeof this.callback == 'function' && this.currentLang) this.callback()
                     })
                 } else {
@@ -37,8 +39,34 @@ class Translate {
         })
     }
 
+    translateAll () {
+        let elems = document.querySelectorAll('[data_lang]');
+
+        for (let i = 0; i < elems.length; i++) {
+            let phrase = elems[i].getAttribute('data_lang'),
+                translate = this.data[phrase];
+            
+            if (this.data[phrase]) elems[i].innerHTML = translate
+            if (this.data[phrase + '_desc']) elems[i].title = this.data[phrase + '_desc']
+        }
+    }
+
     changeLang(newLang, callback) {
-        
+        let file = newLang ? this.path + newLang : false,
+            fs = require('fs')
+                
+        if (file) {
+            fs.readFile(file, err => {
+                this.data = (err == null) ? require(file) : this.data
+                this.file = newLang
+
+                this.translateAll()
+
+                if (callback && typeof callback == 'function') callback()
+            })
+        } else {
+            this.file = this.data = false
+        }
     }
 
     sep (path) {

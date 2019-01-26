@@ -16,13 +16,12 @@ const gulp 	   = require('gulp'),
 let src = {
 		js: [
 			'js/classes/Translate.js',
-			'js/classes/MainMenu.js',
-			'js/classes/MainContent.js',
-			'js/classes/PageSettings.js',
 			'js/lockr.js',
 			'js/function.js',
 			'js/intarface.js',
-			'js/base.js'
+			'js/base.js',
+			'js/page-settings.js',
+			'js/main-menu.js'
 		],
 		all_js: 'js/**/*.js',
 		sass: 'sass/**/*.sass'

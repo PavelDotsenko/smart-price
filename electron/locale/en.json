@@ -1,0 +1,17 @@
+{
+    "locale": "English",
+    "first-welcome": "Welcome to Smart Price",
+    "app-description": "Application for quickly creating and editing price tags",
+    "choice-preferred-lang": "Choose your preferred language",
+    "Select": "Select",
+    "Print": "<span></span><label>Print</label>",
+    "Print_desc": "List of price tags for printing",
+    "Products": "<span></span><label>Products</label>",
+    "Products_desc": "Product editor",
+    "Brands": "<span></span><label>Brands</label>",
+    "Brands_desc": "Brand editor",
+    "Prices": "<span></span><label>Prices</label>",
+    "Prices_desc": "Price tag editor",
+    "Settings": "<span></span><label>Settings</label>",
+    "Settings_desc": "Application settings"
+}
