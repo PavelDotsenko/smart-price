@@ -9,37 +9,54 @@
     <article class="preloader"><span></span></article>
     <article class="welcome">
       <div class="welcome-block">
-        <h1 data_lang="first-welcome">Welcome to Smart Price</h1>
-        <h2 data_lang="app-description">Application for quickly creating and editing price tags</h2>
+        <h1 data-lang="first-welcome">Welcome to Smart Price</h1>
+        <h2 data-lang="app-description">Application for quickly creating and editing price tags</h2>
         <div class="choice-lang">
-          <p data_lang="choice-preferred-lang">Choose your preferred language</p>
+          <p data-lang="choice-preferred-lang-big">Select your preferred language (further language settings can be changed)</p>
           <select class="choise-lang" name="choise-lang"></select>
           <br>
-          <button class="save-lang" data_lang="Select">Select</button>
+          <button class="save-lang" data-lang="Select">Select</button>
         </div>
       </div>
     </article>
     <section class="main-conteiner">
       <nav class="main-menu">
-        <button class="page-print" data_lang="Print"></button>
-        <button class="page-products" data_lang="Products"></button>
-        <button class="page-brands" data_lang="Brands"></button>
-        <button class="page-prices" data_lang="Prices"></button>
-        <button class="page-settings" data_lang="Settings"></button>
+        <button class="page-print" data-lang="Print"></button>
+        <button class="page-products" data-lang="Products"></button>
+        <button class="page-brands" data-lang="Brands"></button>
+        <button class="page-prices" data-lang="Prices"></button>
+        <button class="page-settings" data-lang="Settings"></button>
       </nav>
       <div class="main-content">
         <article class="content-preloader"><span></span></article>
+        <article class="hello-section">Hello</article>
         <section id="page-print"></section>
         <section id="page-products"></section>
-        <section id="page-brands"></section>
+        <section id="page-brands">
+          <div class="search-brand">
+            <input type="text" data-lang="search-brand">
+            <button data-lang="add-brand"></button>
+          </div>
+          <div class="brands-conteiner">
+            <header class="brands-list-head">
+              <li data-lang="id"></li>
+              <li data-lang="nomination"></li>
+              <li data-lang="image"></li>
+            </header>
+            <div class="brands-list"></div>
+          </div>
+        </section>
         <section id="page-prices"></section>
         <section id="page-settings">
-          <h1 data_lang="Settings_desc"></h1>
-          <div>
-            <h2 data_lang="Lang_settings"></h2>
-            <label for="" data_lang="choice-preferred-lang"></label>
-            <select class="choice-preferred-lang"></select>
-          </div>
+          <h1 data-lang="Settings_desc"></h1>
+          <ul>
+            <h2 data-lang="Lang_settings"></h2>
+            <li>
+                <label data-lang="choice-preferred-lang"></label>
+                <select class="choice-preferred-lang"></select>
+                <button data-lang="Select" class="save-preferred-lang"></button>
+            </li>
+          </ul>
         </section>
       </div>
     </section>

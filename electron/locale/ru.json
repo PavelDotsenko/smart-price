@@ -2,7 +2,8 @@
     "locale": "Русский",
     "first-welcome": "Добро пожаловать в Smart Price",
     "app-description": "Приложение для быстрого создания и редактирования ценников",
-    "choice-preferred-lang": "Выберите предпочитаемый язык:",
+    "choice-preferred-lang": "Выберите предпочитаемый язык",
+    "choice-preferred-lang-big": "Выберите предпочитаемый язык (в дальнейшем настройки языка можно изменить)",
     "Select": "Выбрать",
     "Print": "<span></span><label>Печать</label>",
     "Print_desc": "Список ценников для печати",
@@ -14,5 +15,11 @@
     "Prices_desc": "Редактор ценников",
     "Settings": "<span></span><label>Настройки</label>",
     "Settings_desc": "Настройки приложения",
-    "Lang_settings": "Настройки языка"
+    "Lang_settings": "Настройки языка",
+    "search-brand_desc": "Введите название бренда",
+    "add-brand": "Добавить",
+    "add-brand_desc": "Добавить новый бренд",
+    "id": "Id",
+    "nomination": "Наименование",
+    "image": "Изображение"
 }

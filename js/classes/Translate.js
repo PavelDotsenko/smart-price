@@ -40,14 +40,17 @@ class Translate {
     }
 
     translateAll () {
-        let elems = document.querySelectorAll('[data_lang]');
-
+        let elems = document.querySelectorAll('[data-lang]');
+        
         for (let i = 0; i < elems.length; i++) {
-            let phrase = elems[i].getAttribute('data_lang'),
+            let phrase = elems[i].getAttribute('data-lang'),
                 translate = this.data[phrase];
-            
+
             if (this.data[phrase]) elems[i].innerHTML = translate
-            if (this.data[phrase + '_desc']) elems[i].title = this.data[phrase + '_desc']
+            if (this.data[phrase + '_desc']) {
+                if (elems[i].tagName == 'INPUT') elems[i].placeholder = this.data[phrase + '_desc']
+                else elems[i].title = this.data[phrase + '_desc']
+            }
         }
     }
 

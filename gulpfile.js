@@ -16,6 +16,7 @@ const gulp 	   = require('gulp'),
 let src = {
 		js: [
 			'js/classes/Translate.js',
+			'js/classes/ItemsManager.js',
 			'js/lockr.js',
 			'js/function.js',
 			'js/intarface.js',

@@ -1,0 +1,32 @@
+#page-brands
+
+    &.active
+        display: grid
+        grid-template-rows: 3rem 1fr
+
+    .search-brand
+        display: grid
+        grid-template-columns: 1fr 7rem
+    
+    .brands-conteiner
+        display: grid
+        grid-template-rows: 2rem 1fr
+        overflow: hidden
+        background: #eee
+
+        .brands-list-head
+            display: grid
+            grid-template-columns: 1fr 2fr 2fr
+
+            li
+                display: inline-block
+                height: 2rem
+                line-height: 2rem
+                padding-left: 1rem
+                border: .1rem solid $io-border
+                background: $io-bg
+
+        .brands-list
+            overflow: hidden
+            overflow-y: auto
+        
