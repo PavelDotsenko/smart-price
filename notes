@@ -1,0 +1,4 @@
+Попробовать цвета для кнопок
+  default: #3385FF
+  hover:   #4DA6FF
+  active:  #297ACC
