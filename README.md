@@ -49,16 +49,16 @@ smart-price\
 ├── design.svg\
 ├── gulpfile.js\
 ├── notes\
-└── package.json\
+└── package.json
 
 ### Installation
 
 npm install\
 cd electron\
-npm install\
+npm install
 
 ### Start
 
 npm start\
 cd electron\
-npm start\
+npm start
