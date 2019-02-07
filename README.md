@@ -2,6 +2,7 @@
 ### Structure
 
 smart-price\
+│\
 ├── electron/\
 │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── fonts/\
 │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── fa-solid-900.ttf\
@@ -11,9 +12,9 @@ smart-price\
 │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── en.json\
 │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── ru.json\
 │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│\
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── index.html\
 │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── main.js\
-│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── package.json\
-│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── index.html\
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── package.json\
 │\
 ├── js/\
 │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── classes/\
@@ -42,6 +43,21 @@ smart-price\
 │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── _variables.sass\
 │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── _welcome.sass\
 │\
+├── .gitignore\
+├── README.md\
 ├── design.svg\
 ├── gulpfile.js\
+├── notes\
 └── package.json\
+
+### Installation
+
+npm install\
+cd electron\
+npm install\
+
+### Start
+
+npm start\
+cd electron\
+npm start\
