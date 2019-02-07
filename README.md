@@ -1,4 +1,5 @@
-# Smart Price - Application for creating and editing price tags for stores
+![Async Logo](https://paveldotsenko.github.io/logo-big.png)
+
 ### Structure
 
 smart-price\
